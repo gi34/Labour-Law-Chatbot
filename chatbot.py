@@ -267,7 +267,7 @@ Question:
 Answer:
 """
 
-            client = Groq(api_key="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")
+            client = Groq(api_key="YOUR_API_KEY")
 
             # ---------- STREAM RESPONSE ----------
             with st.chat_message("assistant"):
