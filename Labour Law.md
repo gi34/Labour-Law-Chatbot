@@ -1,485 +1,116 @@
-LAWS OF MALAYSIA
-ONLINE VERSION OF UPDATED
-TEXT OF REPRINT
-Act 265
-EMPLOYMENT ACT 1955
-As at 1 January 2023
-This text is ONLY AN UPDATED TEXT of the Employment Act 1955 by the Attorney
-General’s Chambers. Unless and until reprinted pursuant to the powers of the
-Commissioner of Law Revision under subsection 14(1) of the Revision of Laws Act 1968 [Act 1],
-this text is NOT AN AUTHENTIC TEXT.
-2
-EMPLOYMENT ACT 1955
-First enacted … … … … 1955 (F.M. Ordinance
-No. 38 of 1955)
-Revised … … … … 1981 (Act 265 w.e.f.
-18 February 1982)
-Latest amendment made by
-Act A1651 which
-came into operation on … … 1 January 2023
-PREVIOUS REPRINTS
-First Reprint ... ... ... 1975
-Second Reprint ... ... ... 2001
-Third Reprint ... ... ... 2006
-3
-LAWS OF MALAYSIA
-Act 265
-EMPLOYMENT ACT 1955
-ARRANGEMENT OF SECTIONS
-PART I
-PRELIMINARY
-Section
-1. Short title and application
-2. Interpretation
-2A. Minister may prohibit employment other than under contract of service
-2B. General power to exempt or exclude
-3. Appointment of officers
-4. Appeals
-5. Effect on Act of other written laws
-PART II
-CONTRACTS OF SERVICE
-6. Saving of existing contracts
-7. More favourable conditions of service under the Act to prevail
-7A. Validity of any term or condition of service which is more favourable
-7B. Removal of doubt in respect of matters not provided for by or under this Act
-8. Contracts of service not to restrict rights of employees to join, participate in
-or organize trade unions
-9. (Deleted)
-10. Contracts to be in writing and to include provision for termination
-4 Laws of Malaysia ACT 265
-Section
-\\
-11. Provision as to termination of contracts
-12. Notice of termination of contract
-13. Termination of contract without notice
-14. Termination of contract for special reasons
-15. When contract is deemed to be broken by employer and employee
-16. Employees on estates to be provided with minimum number of days’ work
-in each month
-17. (Omitted)
-17A. Apprenticeship contracts excluded from sections 10 to 16
-PART III
-PAYMENT OF WAGES
-18. Wage period
-18A. Calculation of wages for incomplete month’s work
-19. Time of payment of wages
-20. Payment on normal termination of contract
-21. Payment on termination of contract in special circumstances and on breach
-of contract
-22. Limitation on advances to employees
-23. Wages not due for absence from work through imprisonment or attendance
-in court
-PART IV
-DEDUCTIONS FROM WAGES
-24. Lawful deductions
-PART V
-SYSTEM OF PAYMENT OF WAGES
-25. Wages to be paid through financial institution
-25A. Payment of wages other than through financial institution
-Employment 5
-Section
-26. Conditions restricting place at which, manner in which and person with
-whom wages paid to be spent, illegal
-27. Interest on advances forbidden
-28. Restriction on places at which wages may be paid
-29. Remuneration other than wages
-30. (Deleted)
-PART VI
-PRIORITY OF WAGES
-31. Priority of wages over other debts
-32. Reference by the court to Director General
-PART VII
-PRINCIPALS, CONTRACTORS, SUB-CONTRACTORS AND
-CONTRACTORS FOR LABOUR
-33. Liability of principals and contractors for wages
-33A. Information relating to supply of employees
-PART VIII
-EMPLOYMENT OF WOMEN
-34-36. (Deleted)
-PART IX
-PREGNANCY AND MATERNITY
-37. Length of eligible period and entitlement to maternity allowance
-38. Payment of maternity allowance
-39. Payment of allowance to nominee on death of female employee
-6 Laws of Malaysia ACT 265
-Section
-40. Loss of maternity allowance for failure to notify employer
-41. Payment of allowance to nominee
-41A. Restriction on termination of pregnant female employee
-42. Restriction on termination of female employee after eligible period
-43. Conditions contrary to Part void
-44. Register of allowances paid
-44A. (Deleted)
-PART X
-EMPLOYMENT OF CHILDREN AND YOUNG PERSONS
-45-56. (Deleted)
-PART XI
-DOMESTIC EMPLOYEES
-57. Termination of contract
-57A. Employment of foreign domestic employee
-57B. Duty to inform Director General of termination of service of
-foreign domestic employee
-PART XII
-REST DAY, HOURS OF WORK, HOLIDAYS AND OTHER
-CONDITIONS OF SERVICE
-58. (Omitted)
-58A. Non-application of Part XII
-59. Rest day
-60. Work on rest day
-60A. Hours of work and working at night
-60B. Task work
-60C. Shift work
-60D. Holidays
-Employment 7
-Section
-60E. Annual leave
-60F. Sick leave
-60 FA. Paternity leave
-60G. (Omitted)
-60H. (Omitted)
-60I. Interpretation
-PART XIIA
-TERMINATION, LAY-OFF AND RETIREMENT BENEFITS
-60J. Termination, lay-off and retirement benefits
-PART XIIB
-EMPLOYMENT OF FOREIGN EMPLOYEES
-60K. Employment of foreign employee
-60KA. Termination of employment of foreign employee, etc.
-60L. (Deleted)
-60M. Prohibition on termination of local for foreign employee
-60N. Termination of employment by reason of redundancy
-60O. Permanent resident exempted from this Part
-PART XIIC
-FLEXIBLE WORKING ARRANGEMENT
-60P. Flexible working arrangement
-60Q. Application for flexible working arrangement
-PART XIII
-REGISTERS, RETURNS AND NOTICE BOARDS
-61. Duty to keep registers
-62. Power to make regulations requiring information as to wages
-8 Laws of Malaysia ACT 265
-Section
-63. Duty to submit returns
-63A. Duty to give notice and other information
-64. Duty to display notice boards
-PART XIV
-INSPECTION
-65. Powers of inspection and inquiry
-66. Inspecting officer to notify presence
-67. Powers of inspecting officers
-68. Officers to be authorized by the Director General
-PART XV
-COMPLAINTS AND INQUIRIES
-69. Director General’s power to inquire into complaints
-69A. Limitation on power conferred by section 69
-69B. (Deleted)
-69C. (Deleted)
-69D. (Deleted)
-69E. (Deleted)
-69F. Discrimination in employment
-70. Procedure in Director General’s inquiry
-71. Director General’s record of inquiry
-72. Joinder of several complaints in one complaint
-73. Prohibitory order by Director General to third party
-74. No fees for summons: service of summons
-75. Enforcement of Director General’s order by Sessions Court
-76. Submission by Director General to High Court on point of law
-77. Appeal against Director General’s order to High Court
-Employment 9
-Section
-78. Employee’s remedy when employer about to abscond
-79. Powers of Director General to investigate possible offences under this Act
-80. Examination on summons by the Director General
-81. Right of employee to appear before the Director General
-PART XVA
-SEXUAL HARASSMENT
-81A. Interpretation
-81B. Inquiry into complaints of sexual harassment
-81C. Findings of inquiry by employer
-81D. Complaints of sexual harassment made to the Director General
-81E. Effects of decisions of the Director General
-81F. Offence
-81G. (Deleted)
-81H. Notice on sexual harassment
-PART XVI
-PROCEDURE
-82. Service of summons issued under Part XV
-83. Power to make reciprocal provisions between Malaysia and Singapore for
-the service, execution and enforcement of summonses, warrants and orders
-84. Jurisdiction
-85. Prosecution
-85A. Right of audience
-86. Saving clause as to civil jurisdiction of courts
-87. Power of court imposing fine
-87A. Court order for payments due to employee
-88. Effect of imprisonment
-89. Incapacity of Director hearing inquiry
-10 Laws of Malaysia ACT 265
-Section
-90. Officers acting under Act deemed public servants
-90A. Protection of officers
-90B. Forced labour
-PART XVII
-OFFENCES AND PENALTIES
-91. Under Parts III and IV
-92. Under Part V
-93. (Deleted)
-94. Under Part IX
-95. (Deleted)
-96. (Deleted)
-97. Under Part XIII
-98. Under Part XIV
-99. Under Part XV
-99A. General penalty
-100. Penalties for failure or non-compliance in relation to rest days, overtime,
-holidays, annual leave, and sick leave
-101. Offence in connection with inquiry or inspection
-101A. Power to compound offences
-101B. Offence by body corporate, etc.
-101C. Presumption as to who is an employee and employer
-PART XVIII
-REGULATIONS
-102. Regulations
-Employment 11
-PART XIX
-REPEAL AND SAVING
-Section
-103. Repeal and saving
-FIRST SCHEDULE
-SECOND SCHEDULE
-
-13
-LAWS OF MALAYSIA
-Act 265
-EMPLOYMENT ACT 1955
-An Act relating to employment.
-[Peninsular Malaysia─1 June 1957, L.N. 228/1957;
-Federal Territory of Labuan─1 November 2000,
-P.U. (A) 400/2000]
-PART I
-PRELIMINARY
-Short title and application
+# Malaysia Employment Act 1955
+## Short title and application
 1. (1) This Act may be cited as the Employment Act 1955.
 (2) This Act shall apply to *Peninsular Malaysia only.
-Interpretation
-2. (1) In this Act, unless the context otherwise requires—
-“agricultural undertaking” means any work in which any
-employee is employed under a contract of service for the purposes of
-agriculture, horticulture or silviculture, the tending of domestic
-animals and poultry or the collection of the produce of any plants or
-trees;
-*NOTE—This Act has been extended to the Federal Territory of Labuan–see subsection 1(2) of the Federal
-Territory of Labuan (Extension and Modification of Employment Act) Order 2000 [P.U. (A) 400/2000]
-w.e.f. 1 November 2000.
-14 Laws of Malaysia ACT 265
-“apprentice” means any person who has entered into an
-apprenticeship contract;
-“apprenticeship contract” means a written contract entered into by
-a person with an employer who undertakes to employ the person and
-train or have him trained systematically for a trade for a specified
-period which shall be for a minimum period of six months and a
-maximum period of twenty four months in the course of which the
-apprentice is bound to work in the employer’s service;
-“approved amenity or approved service” means any amenity or
-service—
-(a) approved by the Director General under subsection 29(2)
-on application made to him by an employer for its
-inclusion in a contract of service; or
-(b) provided for in any award made by the Industrial Court or
-in any collective agreement;
-“approved incentive payment scheme” means an incentive payment
-scheme approved by the Director General under, and for the purposes
-of, section 60I;
-“collective agreement” has the same meaning assigned thereto in
-the Industrial Relations Act 1967 [Act 177];
-“confinement” means parturition resulting after at least twenty-two
-weeks of pregnancy in the issue of a child or children, whether alive or
-dead, and shall for the purposes of this Act commence and end on the
-actual day of birth and where two or more children are born at one
-confinement shall commence and end on the day of the birth of the
-last-born of such children, and the word “confined” shall be
-construed accordingly;
-“constructional contractor” means any person, firm, corporation or
-company who or which is established for the purpose of undertaking,
-either exclusively or in addition to or in conjunction with any other
-business, any type of constructional work, and who or which is
-carrying out such constructional work for or on behalf of some other
-person under a contract entered into by him or them with such other
-Employment 15
-person, and includes his or their heirs, executors, administrators,
-assignees and successors;
-“constructional work” includes the construction, reconstruction,
-maintenance, repair, alteration or demolition of any building, railway,
-harbour, dock, pier, canal, inland waterway, road, tunnel, bridge,
-viaduct, sewer, drain, well, dredge, wireless, telegraphic or telephonic
-installation, electrical undertaking, gaswork, waterwork or other work
-of construction, as well as the preparation for, or the laying of, the
-foundations of any such work or structure, and also any earthworks
-both in excavation and in filling;
-“contract of service” means any agreement, whether oral or in
-writing and whether express or implied, whereby one person agrees to
-employ another as an employee and that other agrees to serve his
-employer as an employee and includes an apprenticeship contract;
-“contractor” means any person who contracts with a principal to
-carry out the whole or any part of any work undertaken by the principal
-in the course of or for the purposes of the principal’s trade or business;
-“contractor for labour” means a person who contracts with a
-principal, contractor or sub-contractor to supply the labour required for
-the execution of the whole or any part of any work which a contractor
-or sub-contractor has contracted to carry out for a principal or
-contractor, as the case may be;
+
+# Interpretation
+2. (1) In this Act, unless the context otherwise requires—“agricultural undertaking” means any work in which any employee is employed under a contract of service for the purposes of agriculture, horticulture or silviculture, the tending of domestic animals and poultry or the collection of the produce of any plants or trees;
+
+* NOTE—This Act has been extended to the Federal Territory of Labuan–see subsection 1(2) of the Federal Territory of Labuan (Extension and Modification of Employment Act) Order 2000 [P.U. (A) 400/2000] w.e.f. 1 November 2000.
+
+
+“apprentice” means any person who has entered into an apprenticeship contract;
+
+“apprenticeship contract” means a written contract entered into by a person with an employer who undertakes to employ the person and train or have him trained systematically for a trade for a specified period which shall be for a minimum period of six months and a maximum period of twenty four months in the course of which the apprentice is bound to work in the employer’s service; “approved amenity or approved service” means any amenity or service—
+
+(a) approved by the Director General under subsection 29(2) on application made to him by an employer for its inclusion in a contract of service; or
+
+(b) provided for in any award made by the Industrial Court or in any collective agreement; “approved incentive payment scheme” means an incentive payment scheme approved by the Director General under, and for the purposes of, section 60I;
+
+“collective agreement” has the same meaning assigned thereto in the Industrial Relations Act 1967 [Act 177];
+
+“confinement” means parturition resulting after at least twenty-two weeks of pregnancy in the issue of a child or children, whether alive or dead, and shall for the purposes of this Act commence and end on the actual day of birth and where two or more children are born at one confinement shall commence and end on the day of the birth of the last-born of such children, and the word “confined” shall be construed accordingly;
+
+“constructional contractor” means any person, firm, corporation or company who or which is established for the purpose of undertaking, either exclusively or in addition to or in conjunction with any other business, any type of constructional work, and who or which is carrying out such constructional work for or on behalf of some other person under a contract entered into by him or them with such other person, and includes his or their heirs, executors, administrators, assignees and successors;
+
+“constructional work” includes the construction, reconstruction, maintenance, repair, alteration or demolition of any building, railway, harbour, dock, pier, canal, inland waterway, road, tunnel, bridge, viaduct, sewer, drain, well, dredge, wireless, telegraphic or telephonic installation, electrical undertaking, gaswork, waterwork or other work of construction, as well as the preparation for, or the laying of, the foundations of any such work or structure, and also any earthworks both in excavation and in filling;
+
+“contract of service” means any agreement, whether oral or in writing and whether express or implied, whereby one person agrees to employ another as an employee and that other agrees to serve his employer as an employee and includes an apprenticeship contract;
+
+“contractor” means any person who contracts with a principal to carry out the whole or any part of any work undertaken by the principal in the course of or for the purposes of the principal’s trade or business;
+
+“contractor for labour” means a person who contracts with a principal, contractor or sub-contractor to supply the labour required for the execution of the whole or any part of any work which a contractor or sub-contractor has contracted to carry out for a principal or contractor, as the case may be;
+
 “day” means—
-(a) a continuous period of twenty-four hours beginning at
-midnight; or
-(b) for the purposes of Part XII in respect of an employee
-engaged in shift work or in work where the normal hours
-of work extend beyond midnight, a continuous period of
-twenty-four hours beginning at any point of time;
-“Director General” means the Director General of Labour
-appointed under subsection 3(1);
-16 Laws of Malaysia ACT 265
-“domestic employee” means a person employed in connection
-with the work of a private dwelling-house and not in connection with
-any trade, business, or profession carried on by the employer in such
-dwelling-house and includes a cook, house-servant, butler, child’s
-nurse, valet, footman, gardener, washerman or washerwoman,
-watchman, groom and driver or cleaner of any vehicle licensed for
-private use;
+(a) a continuous period of twenty-four hours beginning at midnight; or
+(b) for the purposes of Part XII in respect of an employee engaged in shift work or in work where the normal hours
+of work extend beyond midnight, a continuous period of twenty-four hours beginning at any point of time;
+
+“Director General” means the Director General of Labour appointed under subsection 3(1);
+
+“domestic employee” means a person employed in connection with the work of a private dwelling-house and not in connection with any trade, business, or profession carried on by the employer in such dwelling-house and includes a cook, house-servant, butler, child’s nurse, valet, footman, gardener, washerman or washerwoman, watchman, groom and driver or cleaner of any vehicle licensed for private use;
+
 “employee” means any person or class of persons—
-(a) included in any category in the First Schedule to the extent
-specified therein; or
-(b) in respect of whom the Minister makes an order under
-subsection (3) or section 2A;
-“employer” means any person who has entered into a contract
-of service to employ any other person as an employee and includes
-the agent, manager or factor of such first mentioned person, and the
-word “employ”, with its grammatical variations and cognate
-expressions, shall be construed accordingly;
-“foreign domestic employee” means a domestic employee who is
-not a citizen or a permanent resident;
+(a) included in any category in the First Schedule to the extent specified therein; or
+(b) in respect of whom the Minister makes an order under subsection (3) or section 2A;
+
+“employer” means any person who has entered into a contract of service to employ any other person as an employee and includes the agent, manager or factor of such first mentioned person, and the word “employ”, with its grammatical variations and cognate expressions, shall be construed accordingly;
+
+“foreign domestic employee” means a domestic employee who is not a citizen or a permanent resident;
+
 “foreign employee” means an employee who is not a citizen;
-“Industrial Court” has the same meaning assigned thereto in
-the Industrial Relations Act 1967;
+
+“Industrial Court” has the same meaning assigned thereto in the Industrial Relations Act 1967;
+
 “industrial undertaking” includes—
-(a) disturbing, removing, carting, carrying, washing, sifting,
-melting, refining, crushing or otherwise dealing with any
-rock, stone, gravel, clay, sand, soil, night-soil or mineral by
-any mode or method whatever;
-(b) industries in which articles are manufactured, altered,
-cleaned, repaired, ornamented, finished, adapted for sale,
-packed or otherwise prepared for delivery, broken up, or
-demolished, or in which materials are transformed or
-Employment 17
-minerals treated, including shipbuilding and the generation,
-transformation and transmission of electricity or motive
-power of any kind;
+(a) disturbing, removing, carting, carrying, washing, sifting, melting, refining, crushing or otherwise dealing with any rock, stone, gravel, clay, sand, soil, night-soil or mineral by any mode or method whatever;
+(b) industries in which articles are manufactured, altered, cleaned, repaired, ornamented, finished, adapted for sale, packed or otherwise prepared for delivery, broken up, or demolished, or in which materials are transformed or minerals treated, including shipbuilding and the generation, transformation and transmission of electricity or motive power of any kind;
 (c) constructional work;
-(d) transport of passengers or goods by road, rail, water or air,
-including the handling of goods at docks, quays, wharves,
-warehouses or airports;
-(e) any industry, establishment or undertaking, or any activity,
-service or work, declared under subsection (5) to be an
-industrial undertaking;
+(d) transport of passengers or goods by road, rail, water or air, including the handling of goods at docks, quays, wharves, warehouses or airports;
+(e) any industry, establishment or undertaking, or any activity, service or work, declared under subsection (5) to be an industrial undertaking;
+
 “intoxicating liquor” has the same meaning as that assigned to
-“intoxicating liquor” under section 2 of the Customs Act 1967
-[Act 235];
-“machinery” has the same meaning as in the Factories and
-Machinery Act 1967 [Act 139];
-“medical officer” means a registered medical practitioner who is
-employed in a medical capacity by the Federal Government, or by the
-Government of a State;
-“Minister” means the Minister charged with the responsibility for
-human resources;
-“part-time employee” means a person included in the
-First Schedule whose average hours of work per week as agreed
-between him and his employer are more than thirty per centum but
-do not exceed seventy per centum of the normal hours of work per
-week of a full-time employee employed in a similar capacity in the
-same enterprise;
-“Peninsular Malaysia” has the meaning assigned thereto by
-section 3 of the Interpretation Acts 1948 and 1967 [Act 388], and
+
+“intoxicating liquor” under section 2 of the Customs Act 1967 [Act 235];
+
+“machinery” has the same meaning as in the Factories and Machinery Act 1967 [Act 139];
+
+“medical officer” means a registered medical practitioner who is employed in a medical capacity by the Federal Government, or by the Government of a State;
+
+“Minister” means the Minister charged with the responsibility for human resources;
+
+“part-time employee” means a person included in the First Schedule whose average hours of work per week as agreed between him and his employer are more than thirty per centum but do not exceed seventy per centum of the normal hours of work per week of a full-time employee employed in a similar capacity in the same enterprise;
+
+“Peninsular Malaysia” has the meaning assigned thereto by section 3 of the Interpretation Acts 1948 and 1967 [Act 388], and
 includes the Federal Territory;
-“permanent resident” means a person, not being a citizen, who is
-permitted to reside in Malaysia without any limit of time imposed
-18 Laws of Malaysia ACT 265
-under any law relating to immigration, or who is certified by the
-Federal Government to be treated as such in Malaysia;
-“place of employment” means any place where work is carried on
-for an employer by an employee;
-“principal” means any person who in the course of or for the
-purposes of his trade or business contracts with a contractor for the
-execution by or under the contractor of the whole or any part of any
-work undertaken by the principal;
-“registered medical practitioner” means a medical practitioner
-registered under the Medical Act 1971 [Act 50];
-“sexual harassment” means any unwanted conduct of a sexual nature,
-whether verbal, non-verbal, visual, gestural or physical, directed at a
-person which is offensive or humiliating or is a threat to his well-being,
-arising out of and in the course of his employment;
-“shift work” means work which by reason of its nature requires to be
-carried on continuously or continually, as the case may be, by two or
-more shifts;
-“spread over period of ten hours” means a period of ten consecutive
-hours to be reckoned from the time the employee commences work for
-the day, inclusive of any period or periods of leisure, rest or break
-within such period of ten consecutive hours;
-“sub-contractor” means any person who contracts with a contractor
-for the execution by or under the sub-contractor of the whole or any
-part of any work undertaken by the contractor for his principal, and
-includes any person who contracts with a sub-contractor to carry out
-the whole or any part of any work undertaken by the sub-contractor for
-a contractor;
-“underground working” means any undertaking in which operations
-are conducted for the purpose of extracting any substance from below
-the surface of the earth, the ingress to and egress from which is by
-means of shafts, adits or natural caves;
-Employment 19
-“wage period” means the period in respect of which wages earned by
-an employee are payable;
-“wages” means basic wages and all other payments in cash payable
-to an employee for work done in respect of his contract of service but
-does not include—
-(a) the value of any house accommodation or the supply of any
-food, fuel, light or water or medical attendance, or of any
-approved amenity or approved service;
-(b) any contribution paid by the employer on his own account
-to any pension fund, provident fund, superannuation
-scheme, retrenchment, termination, lay-off or retirement
-scheme, thrift scheme or any other fund or scheme
-established for the benefit or welfare of the employee;
-(c) any travelling allowance or the value of any traveling
-concession;
-(d) any sum payable to the employee to defray special expenses
-entailed on him by the nature of his employment;
+
+“permanent resident” means a person, not being a citizen, who is permitted to reside in Malaysia without any limit of time imposed under any law relating to immigration, or who is certified by the Federal Government to be treated as such in Malaysia;
+
+“place of employment” means any place where work is carried on for an employer by an employee;
+
+“principal” means any person who in the course of or for the purposes of his trade or business contracts with a contractor for the execution by or under the contractor of the whole or any part of any work undertaken by the principal;
+
+“registered medical practitioner” means a medical practitioner registered under the Medical Act 1971 [Act 50];
+
+“sexual harassment” means any unwanted conduct of a sexual nature, whether verbal, non-verbal, visual, gestural or physical, directed at a person which is offensive or humiliating or is a threat to his well-being, arising out of and in the course of his employment;
+
+“shift work” means work which by reason of its nature requires to be carried on continuously or continually, as the case may be, by two or more shifts;
+
+“spread over period of ten hours” means a period of ten consecutive hours to be reckoned from the time the employee commences work for the day, inclusive of any period or periods of leisure, rest or break within such period of ten consecutive hours;
+
+“sub-contractor” means any person who contracts with a contractor for the execution by or under the sub-contractor of the whole or any part of any work undertaken by the contractor for his principal, and includes any person who contracts with a sub-contractor to carry out the whole or any part of any work undertaken by the sub-contractor for a contractor;
+
+“underground working” means any undertaking in which operations are conducted for the purpose of extracting any substance from below the surface of the earth, the ingress to and egress from which is by means of shafts, adits or natural caves;
+
+“wage period” means the period in respect of which wages earned by an employee are payable;
+
+“wages” means basic wages and all other payments in cash payable to an employee for work done in respect of his contract of service but does not include—
+(a) the value of any house accommodation or the supply of any food, fuel, light or water or medical attendance, or of any approved amenity or approved service;
+(b) any contribution paid by the employer on his own account to any pension fund, provident fund, superannuation scheme, retrenchment, termination, lay-off or retirement scheme, thrift scheme or any other fund or scheme established for the benefit or welfare of the employee;
+(c) any travelling allowance or the value of any traveling concession;
+(d) any sum payable to the employee to defray special expenses entailed on him by the nature of his employment;
 (e) any gratuity payable on discharge or retirement; or
 (f) any annual bonus or any part of any annual bonus;
+
 “week” means a continuous period of seven days;
 “year of age” means a year from the date of a person’s birth.
 (2) The Minister may by order amend the First Schedule.
-(3) The Minister may by order declare such provisions of this Act
-and any other written law as may be specified in the order to be
-applicable to any person or class of persons employed, engaged or
-contracted with to carry out work in any occupation in any agricultural
-or industrial undertaking, constructional work, statutory body, local
-government authority, trade, business or place of work, and upon the
-coming into force of any such order—
-20 Laws of Malaysia ACT 265
-(a) any person or class of persons specified in the order shall
-be deemed to be an employee or employees;
-(b) the person, statutory body or local government authority
-employing, engaging or contracting with every such person
-or class of persons shall be deemed to be an employer;
-(c) the employer and the employee shall be deemed to have
-entered into a contract of service with one another;
-(d) the place where such employee carries on work for his
-employer shall be deemed to be a place of employment; and
-(e) the remuneration of such employee shall be deemed to be
-wages,
-for the purposes of such specified provisions of this Act and any other
-written law.
-(4) The Minister may make regulations in respect of the terms and
-conditions upon which the person or class of persons specified pursuant
-to subsection (3) may be employed.
+(3) The Minister may by order declare such provisions of this Act and any other written law as may be specified in the order to be applicable to any person or class of persons employed, engaged or contracted with to carry out work in any occupation in any agricultural or industrial undertaking, constructional work, statutory body, local government authority, trade, business or place of work, and upon the coming into force of any such order—
+(a) any person or class of persons specified in the order shall be deemed to be an employee or employees;
+(b) the person, statutory body or local government authority employing, engaging or contracting with every such person or class of persons shall be deemed to be an employer;
+(c) the employer and the employee shall be deemed to have entered into a contract of service with one another;
+(d) the place where such employee carries on work for his employer shall be deemed to be a place of employment; and other written law.
+(4) The Minister may make regulations in respect of the terms and conditions upon which the person or class of persons specified pursuant to subsection (3) may be employed.
 (4A) Notwithstanding the provisions of this Act, the Minister may
 make regulations—
 (a) in respect of the terms and conditions of service of a

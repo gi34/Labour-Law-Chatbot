@@ -1,18 +1,20 @@
 from pathlib import Path
 from typing import List
-
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
 import streamlit as st
 from groq import Groq
+from langchain_groq import ChatGroq
 from langchain_core.documents import Document
 from langchain_community.document_loaders import TextLoader
 from langchain_community.embeddings import SentenceTransformerEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-
 from sentence_transformers import CrossEncoder
+from operator import itemgetter
 
-KB_PATH = Path(__file__).resolve().parent / "Labour Law.txt"
-
+KB_PATH = Path(__file__).resolve().parent / "Labour Law.md"
+history = []  # Initialize history as an empty list
 
 def chunking(text: str) -> List[Document]:
     """Split text into a parent/child hierarchy for better retrieval."""
@@ -60,57 +62,60 @@ def build_vector_store() -> FAISS:
     vector_store = FAISS.from_documents(split_docs, embeddings)
     return vector_store
 
-
-@st.cache_resource(show_spinner=True)
-def get_cross_encoder() -> CrossEncoder:
-    return CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
-
-
 def rerank_documents(query: str, docs: List[Document], top_k: int = 5) -> List[Document]:
     if not docs:
         return []
     pairs = [(query, doc.page_content) for doc in docs]
-    scores = get_cross_encoder().predict(pairs)
+    reranker = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
+    scores = reranker.predict(pairs)
     ranked = sorted(zip(scores, docs), key=lambda item: item[0], reverse=True)
     return [doc for _, doc in ranked][:top_k]
 
+vector_store = build_vector_store()
 
-def answer_query(query: str, vector_store: FAISS) -> str:
-    retrieved_docs = vector_store.similarity_search(query, k=10)
-    reranked_docs = rerank_documents(query, retrieved_docs, top_k=5)
+prompt = ChatPromptTemplate.from_messages([
+    ("system",
+    '''
+    You are a Malaysian labour law assistant. Answer the question using only the provided context.
+    If the question contains ambiguous or unclear terms, check the history first. 
+    If the question remain ambiguous after checking the history, ask for clarification before answering.
+    
+    If the answer is not contained in the context, say you cannot find a specific answer in the law text.
+    
+    Context:
+    {context}
 
-    context = "\n\n".join(
-        f"Source: {doc.metadata.get('source', 'Labour Law')}\n{doc.page_content}"
-        for doc in reranked_docs
-    )
+    History:
+    {history}
 
-    prompt = (
-        "You are a Malaysian labour law assistant. Answer the question using only the provided context from the Akta Kerja 1955 knowledge base. "
-        "If the answer is not contained in the context, say you cannot find a specific answer in the law text.\n\n"
-        "Context:\n" + context + "\n\nQuestion: " + query + "\nAnswer:"
-    )
+    Answer:
+    '''
+    ),(
+    "human",
+    "{question}")
+])
 
-    client = Groq(api_key="YOUR_GROQ_API_KEY")
-    completion = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
-        messages=[
-            {
-                "role": "user",
-                "content": prompt,
-            }
-        ],
-        temperature=0.2,
-        max_completion_tokens=1024,
-        top_p=1,
-        stream=True,
-        stop=None,
-    )
+llm = ChatGroq(
+    model="llama-3.1-8b-instant",
+    api_key="your key",
+    temperature=0.2,
+    max_completion_tokens=1024,
+    top_p=1,
+    stream=False,
+    stop=None,
+)
 
-    output = []
-    for chunk in completion:
-        output.append(chunk.choices[0].delta.content or "")
 
-    return "".join(output)
+rag_chain = (
+    {
+        "context": itemgetter("context"),
+        "question": itemgetter("question"),
+        "history": itemgetter("history"),
+    }
+    | prompt
+    | llm
+    | StrOutputParser()
+)
 
 
 def render_chat_interface():
@@ -224,74 +229,46 @@ def render_chat_interface():
                             )
 
     # ---------- USER INPUT ----------
-    prompt = st.chat_input("Ask your labour law question...")
+    user_prompt = st.chat_input("Ask your labour law question...")
 
-    if prompt:
-        # Show user message
-        st.chat_message("user").markdown(prompt)
+    if user_prompt:
+        with st.chat_message("user"):
+            st.markdown(user_prompt)
 
-        # Save user message
         st.session_state.messages.append({
             "role": "user",
-            "content": prompt
+            "content": user_prompt
         })
 
-        try:
-            vector_store = build_vector_store()
+        history = st.session_state.messages[:-3]  # Exclude the current user message
 
-            retrieved_docs = vector_store.similarity_search(prompt, k=top_k)
-            reranked_docs = rerank_documents(
-                prompt,
-                retrieved_docs,
-                top_k=rerank_k
+        history_text = ""
+        if history:
+            history_text = "\n\n".join(
+                f"{m.get('role','')}: {m.get('content','')}" for m in history
             )
+
+        try:
+            retrieved_docs = vector_store.similarity_search(user_prompt, k=top_k)
+            reranked_docs = rerank_documents(user_prompt, retrieved_docs, top_k=rerank_k)
 
             context = "\n\n".join(
-                doc.page_content for doc in reranked_docs
+                f"Source: {doc.metadata.get('source', 'Labour Law')}\n{doc.page_content}"
+                for doc in reranked_docs
             )
 
-            prompt_template = f"""
-You are a Malaysian labour law assistant.
-
-Answer ONLY using the provided context.
-
-If the answer is not found, say:
-"I cannot find a specific answer in the provided law text."
-
-Context:
-{context}
-
-Question:
-{prompt}
-
-Answer:
-"""
-
-            client = Groq(api_key="YOUR_API_KEY")
-
-            # ---------- STREAM RESPONSE ----------
             with st.chat_message("assistant"):
                 response_placeholder = st.empty()
 
-                streamed_text = ""
-
-                completion = client.chat.completions.create(
-                    model="llama-3.1-8b-instant",
-                    messages=[
-                        {
-                            "role": "user",
-                            "content": prompt_template,
-                        }
-                    ],
-                    temperature=0.2,
-                    stream=True,
-                )
-
-                for chunk in completion:
-                    token = chunk.choices[0].delta.content or ""
-                    streamed_text += token
-
-                    response_placeholder.markdown(streamed_text)
+                response = ""
+                
+                for chunk in rag_chain.stream({
+                    "context": context,
+                    "question": user_prompt,
+                    "history": history_text,
+                }):
+                    response += chunk
+                    response_placeholder.markdown(response)
 
                 # Sources
                 if show_sources:
@@ -309,7 +286,7 @@ Answer:
             # Save assistant response
             st.session_state.messages.append({
                 "role": "assistant",
-                "content": streamed_text,
+                "content": response,
                 "sources": [doc.page_content for doc in reranked_docs]
             })
 
