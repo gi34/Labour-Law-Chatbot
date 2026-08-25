@@ -34,9 +34,9 @@ Source: https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https:
 | RAG Framework | LangChain | Build and manage the RAG pipeline |
 | Embedding Model | Sentence Transformers | Convert legal documents and queries into vector embeddings |
 | Vector Database | FAISS | Store and perform similarity search on document embeddings |
+| Database | PostgreSql | Store the conversation history |
 | Reranker | Cross-Encoder | Re-rank retrieved legal documents based on query relevance |
 | Document Processing | pdfplumber | Extract text from Malaysian labour law PDF document |
-| Text Splitting | Recursive Character Text Splitter | Split legal documents into smaller searchable chunks |
 | Frontend | Streamlit | Provide an interactive chatbot interface |
 
 ## Project Structure
@@ -45,10 +45,12 @@ Labour Law Chatbot
 │
 ├── Akta Kerja 1955(Akta 265).pdf    # Malaysia Labour Law PDF
 ├── Labour Law.md                    # Knowledge base of RAG
-├── OCR                              # Text extraction
+├── app.py                           # frontend of the system
+├── text extraction                  # Text extraction
 ├── chatbot.py                       # Main file to run chatbot
 └── requirements.txt                 # Python dependencies
 ```
 
 ## Demo
-[Labour Law Chatbot: (https://youtu.be/jN1wJpWEc7c)]
+Video: https://youtu.be/jN1wJpWEc7c
+
