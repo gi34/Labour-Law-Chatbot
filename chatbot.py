@@ -2,8 +2,6 @@ from pathlib import Path
 from typing import List
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-import streamlit as st
-from groq import Groq
 from langchain_groq import ChatGroq
 from langchain_core.documents import Document
 from langchain_community.document_loaders import TextLoader
@@ -12,9 +10,13 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from sentence_transformers import CrossEncoder
 from operator import itemgetter
+from dotenv import load_dotenv
+import os
 
+
+load_dotenv()
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 KB_PATH = Path(__file__).resolve().parent / "Labour Law.md"
-history = []  # Initialize history as an empty list
 
 def chunking(text: str) -> List[Document]:
     """Split text into a parent/child hierarchy for better retrieval."""
@@ -47,7 +49,6 @@ def chunking(text: str) -> List[Document]:
     return documents
 
 
-@st.cache_data(show_spinner=True)
 def build_vector_store() -> FAISS:
     if not KB_PATH.exists():
         raise FileNotFoundError(f"Knowledge base not found at {KB_PATH}")
@@ -96,8 +97,8 @@ prompt = ChatPromptTemplate.from_messages([
 ])
 
 llm = ChatGroq(
-    model="llama-3.1-8b-instant",
-    api_key="your key",
+    model="openai/gpt-oss-20b",
+    api_key=GROQ_API_KEY,
     temperature=0.2,
     max_completion_tokens=1024,
     top_p=1,
@@ -117,182 +118,18 @@ rag_chain = (
     | StrOutputParser()
 )
 
+# return database url
+def get_database():
+    database_url = os.getenv("DATABASE_URL")
 
-def render_chat_interface():
-    st.set_page_config(
-        page_title="Labour Law Assistant",
-        page_icon="⚖️",
-        layout="wide",
-    )
+    if not database_url:
+        raise ValueError(
+            "DATABASE_URL is missing. Please add your Render PostgreSQL External Database URL to .env"
+        )
 
-    # ---------- CUSTOM CSS ----------
-    st.markdown("""
-    <style>
-        .main {
-            background-color: #f8fafc;
-        }
+    if "sslmode=" not in database_url:
+        separator = "&" if "?" in database_url else "?"
+        database_url = f"{database_url}{separator}sslmode=require"
 
-        .stChatMessage {
-            padding: 1rem;
-            border-radius: 16px;
-            margin-bottom: 1rem;
-        }
+    return database_url
 
-        .stChatMessage[data-testid="chatAvatarIcon-user"] {
-            background-color: #2563eb;
-        }
-
-        .stChatMessage[data-testid="chatAvatarIcon-assistant"] {
-            background-color: #0f172a;
-        }
-
-        .block-container {
-            padding-top: 2rem;
-            max-width: 1100px;
-        }
-
-        .title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #0f172a;
-            margin-bottom: 0;
-        }
-
-        .subtitle {
-            color: #475569;
-            margin-top: 0;
-            margin-bottom: 2rem;
-        }
-
-        .source-box {
-            background: #e2e8f0;
-            padding: 12px;
-            border-radius: 10px;
-            font-size: 0.9rem;
-            margin-top: 10px;
-        }
-    </style>
-    """, unsafe_allow_html=True)
-
-    # ---------- SIDEBAR ----------
-    with st.sidebar:
-        st.title("⚖️ Labour Law")
-
-        st.markdown("---")
-
-        st.subheader("Knowledge Base")
-        st.write(f"File: `{KB_PATH.name}`")
-
-        st.subheader("Retrieval")
-        top_k = st.slider("Retrieved Chunks", 3, 15, 10)
-        rerank_k = st.slider("Reranked Chunks", 1, 10, 5)
-
-        show_sources = st.toggle("Show Sources", value=True)
-
-        st.markdown("---")
-
-        if st.button("🗑️ Clear Chat"):
-            st.session_state.messages = []
-            st.rerun()
-
-    # ---------- HEADER ----------
-    st.markdown(
-        "<p class='title'>Labour Law Assistant</p>",
-        unsafe_allow_html=True,
-    )
-
-    st.markdown(
-        "<p class='subtitle'>Ask questions about Malaysia's Akta Kerja 1955.</p>",
-        unsafe_allow_html=True,
-    )
-
-    # ---------- SESSION ----------
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
-
-    # ---------- CHAT HISTORY ----------
-    for message in st.session_state.messages:
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
-
-            if message["role"] == "assistant" and message.get("sources"):
-                if show_sources:
-                    with st.expander("Sources Used"):
-                        for src in message["sources"]:
-                            st.markdown(
-                                f"""
-                                <div class="source-box">
-                                    {src[:500]}...
-                                </div>
-                                """,
-                                unsafe_allow_html=True
-                            )
-
-    # ---------- USER INPUT ----------
-    user_prompt = st.chat_input("Ask your labour law question...")
-
-    if user_prompt:
-        with st.chat_message("user"):
-            st.markdown(user_prompt)
-
-        st.session_state.messages.append({
-            "role": "user",
-            "content": user_prompt
-        })
-
-        history = st.session_state.messages[:-3]  # Exclude the current user message
-
-        history_text = ""
-        if history:
-            history_text = "\n\n".join(
-                f"{m.get('role','')}: {m.get('content','')}" for m in history
-            )
-
-        try:
-            retrieved_docs = vector_store.similarity_search(user_prompt, k=top_k)
-            reranked_docs = rerank_documents(user_prompt, retrieved_docs, top_k=rerank_k)
-
-            context = "\n\n".join(
-                f"Source: {doc.metadata.get('source', 'Labour Law')}\n{doc.page_content}"
-                for doc in reranked_docs
-            )
-
-            with st.chat_message("assistant"):
-                response_placeholder = st.empty()
-
-                response = ""
-                
-                for chunk in rag_chain.stream({
-                    "context": context,
-                    "question": user_prompt,
-                    "history": history_text,
-                }):
-                    response += chunk
-                    response_placeholder.markdown(response)
-
-                # Sources
-                if show_sources:
-                    with st.expander("Sources Used"):
-                        for doc in reranked_docs:
-                            st.markdown(
-                                f"""
-                                <div class="source-box">
-                                    {doc.page_content[:500]}...
-                                </div>
-                                """,
-                                unsafe_allow_html=True,
-                            )
-
-            # Save assistant response
-            st.session_state.messages.append({
-                "role": "assistant",
-                "content": response,
-                "sources": [doc.page_content for doc in reranked_docs]
-            })
-
-        except Exception as e:
-            st.error(str(e))
-
-
-if __name__ == "__main__":
-    render_chat_interface()
