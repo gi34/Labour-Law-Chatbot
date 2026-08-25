@@ -10,6 +10,8 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from sentence_transformers import CrossEncoder
 from operator import itemgetter
+from psycopg.types.json import Jsonb
+from uuid import UUID
 from dotenv import load_dotenv
 import os
 
@@ -133,3 +135,17 @@ def get_database():
 
     return database_url
 
+def save_message(connection, conversation_id: str, message: dict) -> None:
+    with connection.cursor() as cursor:
+        cursor.execute(
+            """
+            INSERT INTO chat_messages (conversation_id, role, content, sources)
+            VALUES (%s, %s, %s, %s)
+            """,
+            (
+                UUID(conversation_id),
+                message["role"],
+                message["content"],
+                Jsonb(message.get("sources")) if message.get("sources") else None,
+            ),
+        )

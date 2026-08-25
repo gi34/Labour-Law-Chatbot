@@ -1,9 +1,9 @@
 import streamlit as st
 import psycopg
 from psycopg.rows import dict_row
-from psycopg.types.json import Jsonb
+
 from uuid import UUID, uuid4
-from chatbot import build_vector_store, KB_PATH, get_database, rerank_documents, rag_chain
+from chatbot import build_vector_store, KB_PATH, get_database, rerank_documents, rag_chain, save_message
 
 
 @st.cache_data(show_spinner=True)
@@ -40,42 +40,11 @@ def get_database_connection():
     return connection
 
 
-def load_messages(conversation_id: str) -> list[dict]:
-    with get_database_connection().cursor() as cursor:
-        cursor.execute(
-            """
-            SELECT role, content, sources
-            FROM chat_messages
-            WHERE conversation_id = %s
-            ORDER BY created_at, id
-            """,
-            (UUID(conversation_id),),
-        )
-        return list(cursor.fetchall())
-
-
-def save_message(conversation_id: str, message: dict) -> None:
-    with get_database_connection().cursor() as cursor:
-        cursor.execute(
-            """
-            INSERT INTO chat_messages (conversation_id, role, content, sources)
-            VALUES (%s, %s, %s, %s)
-            """,
-            (
-                UUID(conversation_id),
-                message["role"],
-                message["content"],
-                Jsonb(message.get("sources")) if message.get("sources") else None,
-            ),
-        )
-
+connection = get_database_connection()
 
 def render_chat_interface():
     if "conversation_id" not in st.session_state:
         st.session_state.conversation_id = str(uuid4())
-
-    if "messages" not in st.session_state:
-        st.session_state.messages = load_messages(st.session_state.conversation_id)
 
     st.set_page_config(
         page_title="Labour Law Assistant",
@@ -197,7 +166,7 @@ def render_chat_interface():
             "role": "user",
             "content": user_prompt
         })
-        save_message(st.session_state.conversation_id, st.session_state.messages[-1])
+        save_message(connection, st.session_state.conversation_id, st.session_state.messages[-1])
 
         history = st.session_state.messages[:-3]  # Exclude the current user message
 
@@ -249,7 +218,7 @@ def render_chat_interface():
                 "sources": [doc.page_content for doc in reranked_docs]
             }
             st.session_state.messages.append(assistant_message)
-            save_message(st.session_state.conversation_id, assistant_message)
+            save_message(connection, st.session_state.conversation_id, assistant_message)
 
         except Exception as e:
             st.error(str(e))
