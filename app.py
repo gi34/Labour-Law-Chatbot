@@ -43,6 +43,9 @@ def get_database_connection():
 connection = get_database_connection()
 
 def render_chat_interface():
+    if "messages" not in st.session_state:
+        st.session_state.messages = []
+
     if "conversation_id" not in st.session_state:
         st.session_state.conversation_id = str(uuid4())
 
